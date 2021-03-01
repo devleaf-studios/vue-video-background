@@ -9,7 +9,7 @@
   "types": "fixed-video-background.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/devleaf-studios/vue-fixed-video-background"
+    "url": "https://github.com/devleaf-studios/vue-video-background"
   },
   "files": [
     "dist/*",
