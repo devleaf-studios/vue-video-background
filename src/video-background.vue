@@ -2,7 +2,7 @@
   <video ref="videoElem" class="background-video" :style="{ position }" :poster="poster" playsinline autoplay muted loop>
     <source v-for="(source, i) in sources" :key="i" :src="source.src" :type="source.mime" />
   </video>
-  <div v-if="poster" class="low-power-fallback" :style="{ backgroundImage: `url(${poster})`, display: isLowPower ? 'block' : 'none' }"></div>
+  <div v-if="poster" class="low-power-fallback" :style="{ backgroundImage: `url(${poster})`, display: isLowPower ? 'block' : 'none', position }"></div>
 </template>
 
 <script lang="ts">
@@ -34,7 +34,7 @@ export default {
       type: Array as () => VideoSources[]
     },
     position: {
-      type: String as () => 'fixed'|'relative',
+      type: String as () => 'fixed'|'relative'|'absolute',
       default: 'fixed'
     }
   },
