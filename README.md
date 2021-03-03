@@ -1,9 +1,7 @@
 # vue-video-background
 This component is created for > Vue 3 due to it using the composition API. Unfortunately Vue2 is not supported due to Vue 3 being pretty widely used at this point. It shouldn't be difficult to take the source code for this component and translate it to Vue 2 however.
 
-A component to easily create a background video of either Relative or Fixed position, allowing you 
-to post content over the top. This component can accept multiple video sources, fallback image and even applies a 
-fallback to iOS low power mode by using the `playing` event listener on component mounting to see if a pause happens. 
+A component for Vue 3 to easily create a background video of either Relative, Absolute or Fixed position, allowing you to post content over the top. This component can accept multiple video sources, fallback image and even applies a fallback to iOS low power mode by using the `playing` event listener on component mounting to see if a pause happens. 
 
 The component also adheres to all browsers autoplay requirements with the following properties: `playsinline autoplay muted loop`
 
