@@ -1,8 +1,13 @@
 {
   "name": "@devleaf-labs/vue-video-background",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Vue 3 component to easily create a background video of either Relative, Absolute or Fixed position, allowing you to post content over the top. ",
-  "keywords": ["Vue", "Vue3", "SFC", "Typescript"],
+  "keywords": [
+    "Vue",
+    "Vue3",
+    "SFC",
+    "Typescript"
+  ],
   "main": "dist/fixed-video-background.ssr.js",
   "browser": "dist/fixed-video-background.esm.js",
   "module": "dist/fixed-video-background.esm.js",
