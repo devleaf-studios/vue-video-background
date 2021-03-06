@@ -1,7 +1,7 @@
 # vue-video-background
-This component is created for > Vue 3 due to it using the composition API. Unfortunately Vue2 is not supported due to Vue 3 being pretty widely used at this point. It shouldn't be difficult to take the source code for this component and translate it to Vue 2 however.
+This component is created for > Vue 3 due to it using the composition API. Unfortunately Vue 2 is not supported due to Vue 3 being pretty widely used at this point. It shouldn't be difficult to take the source code for this component and translate it to Vue 2 however.
 
-A component for Vue 3 to easily create a background video of either Relative, Absolute or Fixed position, allowing you to post content over the top. This component can accept multiple video sources, fallback image and even applies a fallback to iOS low power mode by using the `playing` event listener on component mounting to see if a pause happens. 
+A component for Vue 3 to easily create a background video of either Relative, Absolute or Fixed position, allowing you to post content over the top. This component can accept multiple video sources, fallback image and even applies a fallback to iOS low power mode by using the `playing` event listener on component mounting to see if a pause happens.
 
 The component also adheres to all browsers autoplay requirements with the following properties: `playsinline autoplay muted loop`
 
@@ -35,7 +35,7 @@ export default {
 | mime | String | `'video/mp4'` | The MIME Type of the video you are trying to play |
 | fallback | String | - | A fallback image to display if the user is on low power mode or the video is loading |
 | lowBatterySupport | Boolean | `true` | Whether to support detection of iOS' Low Power Mode |
-| position | `'fixed'|'relative'|'absolute'` | `'fixed'` | The CSS position of the background video |
+| position | `'fixed' or 'relative' or 'absolute'` | `'fixed'` | The CSS position of the background video |
 | multiSrc | Array | - | An array of multiple video sources to display (cannot use with `:src` and `:mime` properties [see multiple sources below]) |
 
 ### Using multiple sources for your video
