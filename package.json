@@ -8,18 +8,18 @@
     "SFC",
     "Typescript"
   ],
-  "main": "dist/fixed-video-background.ssr.js",
-  "browser": "dist/fixed-video-background.esm.js",
-  "module": "dist/fixed-video-background.esm.js",
-  "unpkg": "dist/fixed-video-background.min.js",
-  "types": "fixed-video-background.d.ts",
+  "main": "dist/video-background.ssr.js",
+  "browser": "dist/video-background.esm.js",
+  "module": "dist/video-background.esm.js",
+  "unpkg": "dist/video-background.min.js",
+  "types": "video-background.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/devleaf-studios/vue-video-background"
   },
   "files": [
     "dist/*",
-    "fixed-video-background.d.ts",
+    "video-background.d.ts",
     "src/**/*.vue"
   ],
   "sideEffects": false,

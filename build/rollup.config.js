@@ -85,7 +85,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.ts',
     external,
     output: {
-      file: 'dist/fixed-video-background.esm.js',
+      file: 'dist/video-background.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -117,9 +117,9 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/fixed-video-background.ssr.js',
+      file: 'dist/video-background.ssr.js',
       format: 'cjs',
-      name: 'FixedVideoBackground',
+      name: 'VideoBackground',
       exports: 'auto',
       globals,
     },
@@ -141,9 +141,9 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/fixed-video-background.min.js',
+      file: 'dist/video-background.min.js',
       format: 'iife',
-      name: 'FixedVideoBackground',
+      name: 'VideoBackground',
       exports: 'auto',
       globals,
     },

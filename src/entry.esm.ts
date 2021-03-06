@@ -1,7 +1,7 @@
 import { App, DefineComponent, Plugin } from 'vue';
 
 // Import vue component
-import component from '@/fixed-video-background.vue';
+import component from '@/video-background.vue';
 
 // Define typescript interfaces for installable component
 type InstallableComponent = DefineComponent<{}, {}, any> & { install: Exclude<Plugin['install'], undefined> };
@@ -15,7 +15,7 @@ export default /*#__PURE__*/((): InstallableComponent => {
 
   // Attach install function executed by Vue.use()
   installable.install = (app: App) => {
-    app.component('FixedVideoBackground', installable);
+    app.component('VideoBackground', installable);
   };
   return installable;
 })();

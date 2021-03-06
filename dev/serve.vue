@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import VideoBackground from '@/video-background.vue';
+import VideoBackground from '/src/video-background.vue';
 
 export default defineComponent({
   name: 'ServeDev',
