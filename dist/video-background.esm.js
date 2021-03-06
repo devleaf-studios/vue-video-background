@@ -50,7 +50,10 @@ var script = {
 
       const isPlaying = () => {
         isLowPower.value = false;
-        videoElem.value?.removeEventListener('playing', isPlaying);
+
+        if (videoElem.value) {
+          videoElem.value.removeEventListener('playing', isPlaying);
+        }
       };
 
       videoElem.value.addEventListener('playing', isPlaying);
@@ -66,7 +69,7 @@ var script = {
 
 };
 
-const _withId = /*#__PURE__*/withScopeId("data-v-36ebb809");
+const _withId = /*#__PURE__*/withScopeId("data-v-43caf043");
 
 const render = /*#__PURE__*/_withId((_ctx, _cache, $props, $setup, $data, $options) => {
   return openBlock(), createBlock(Fragment, null, [createVNode("video", {
@@ -124,11 +127,11 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = "\n.background-video[data-v-36ebb809] {\n  object-fit: cover;\n  width: 100vw;\n  height: 100vh;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n}\n.low-power-fallback[data-v-36ebb809] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0;\n  z-index: 0;\n  background-size: cover;\n  background-position: center;\n}\n";
+var css_248z = "\n.background-video[data-v-43caf043] {\n  object-fit: cover;\n  width: 100vw;\n  height: 100vh;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n}\n.low-power-fallback[data-v-43caf043] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0;\n  z-index: 0;\n  background-size: cover;\n  background-position: center;\n}\n";
 styleInject(css_248z);
 
 script.render = render;
-script.__scopeId = "data-v-36ebb809";
+script.__scopeId = "data-v-43caf043";
 
 // Import vue component
 

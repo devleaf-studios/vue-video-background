@@ -100,10 +100,11 @@ function _nonIterableRest() {
       if (!videoElem.value) return console.error('Video element not linked'); // run check for low power
 
       var isPlaying = function isPlaying() {
-        var _videoElem$value;
-
         isLowPower.value = false;
-        (_videoElem$value = videoElem.value) === null || _videoElem$value === void 0 ? void 0 : _videoElem$value.removeEventListener('playing', isPlaying);
+
+        if (videoElem.value) {
+          videoElem.value.removeEventListener('playing', isPlaying);
+        }
       };
 
       videoElem.value.addEventListener('playing', isPlaying);
@@ -116,7 +117,7 @@ function _nonIterableRest() {
       position: props.position
     };
   }
-};var _withId = /*#__PURE__*/vue.withScopeId("data-v-36ebb809");
+};var _withId = /*#__PURE__*/vue.withScopeId("data-v-43caf043");
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
   return vue.openBlock(), vue.createBlock(vue.Fragment, null, [vue.createVNode("video", {
@@ -170,9 +171,9 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   } else {
     style.appendChild(document.createTextNode(css));
   }
-}var css_248z = "\n.background-video[data-v-36ebb809] {\n  object-fit: cover;\n  width: 100vw;\n  height: 100vh;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n}\n.low-power-fallback[data-v-36ebb809] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0;\n  z-index: 0;\n  background-size: cover;\n  background-position: center;\n}\n";
+}var css_248z = "\n.background-video[data-v-43caf043] {\n  object-fit: cover;\n  width: 100vw;\n  height: 100vh;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n}\n.low-power-fallback[data-v-43caf043] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0;\n  z-index: 0;\n  background-size: cover;\n  background-position: center;\n}\n";
 styleInject(css_248z);script.render = render;
-script.__scopeId = "data-v-36ebb809";// Import vue component
+script.__scopeId = "data-v-43caf043";// Import vue component
 
 // Default export is installable instance of component.
 // IIFE injects install function into component, allowing component
