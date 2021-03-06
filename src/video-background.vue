@@ -63,7 +63,9 @@ export default {
       // run check for low power
       const isPlaying = () => {
           isLowPower.value = false;
-          videoElem.value?.removeEventListener('playing', isPlaying);
+          if (videoElem.value) {
+            videoElem.value.removeEventListener('playing', isPlaying);
+          }
       }
       videoElem.value.addEventListener('playing', isPlaying);
 
